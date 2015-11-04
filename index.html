@@ -1,0 +1,34 @@
+<html>
+    <body style="width: 200px; margin: 30px auto">
+        <form id="loginForm" autocomplete="disabled">
+            <fieldset>
+                <legend>Calculator</legend>
+
+                <div>
+                    <label for="a">a</label>
+                    <input type="number" name="a" id="a" value="1">
+                </div>
+
+                <div>
+                    <label for="b">b</label>
+                    <input type="number" name="b" id="b" value="2">
+                </div>
+
+                <div style="text-align: center; margin-top: 10px">
+                    <input type="button" value="+" class="operator">
+                    <input type="button" value="-" class="operator">
+                    <input type="button" value="*" class="operator">
+                    <input type="button" value="/" class="operator">
+                </div>
+                <hr />
+                <div>
+                    <input type="text" readonly="readonly" placeholder="Result" id="calculation" style="width: 100%; text-align: center">
+                </div>
+
+            </fieldset>
+        </form>
+        <script type="text/javascript" src="out/goog/base.js"></script>
+        <script type="text/javascript" src="out/main.js"></script>
+        <script type="text/javascript">goog.require("calculator.calculator");</script>
+    </body>
+</html>
